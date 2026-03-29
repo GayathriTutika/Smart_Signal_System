@@ -1,34 +1,83 @@
-# Smart Emergency Vehicle Priority System
+# 🚦 Smart Emergency Vehicle Priority System
 
-This is a software-only prototype for a cloud-based emergency vehicle signal priority system.
+## 📌 Overview
 
-## What it shows
+This project is a software-based prototype of a cloud-driven traffic management system designed to prioritize emergency vehicles such as ambulances, fire trucks, and police vehicles.
 
-- Ambulance or fire vehicle GPS updates every 5 seconds
-- Cloud server receives and processes the GPS data
-- Nearest traffic signal is identified
-- If the vehicle is within 1 km, a priority command is generated
-- Dashboard shows which signal should change
+The system simulates real-time GPS tracking of emergency vehicles and dynamically controls traffic signals to reduce delays and improve response time.
 
-## Files
+---
 
-- `app.py` -> Flask cloud server and decision logic
-- `ambulance.py` -> emergency vehicle GPS simulator
-- `templates/index.html` -> dashboard page
-- `static/style.css` -> dashboard styling
-- `static/script.js` -> live dashboard logic
+## 🚀 Key Features
 
-## Run
+* 🚑 Real-time emergency vehicle GPS simulation (updates every 5 seconds)
+* ☁️ Cloud-based processing using Flask backend
+* 📍 Intelligent detection of nearest traffic signal
+* 🚦 Automatic priority signal activation within 1 km range
+* 📊 Live dashboard for monitoring signal decisions
+
+---
+
+## 🛠️ Tech Stack
+
+* Python (Flask)
+* HTML, CSS, JavaScript
+* REST-based communication
+
+---
+
+## ⚙️ How It Works
+
+1. Emergency vehicle sends GPS data periodically
+2. Flask server processes location data
+3. Nearest traffic signal is identified
+4. If within threshold distance, priority is assigned
+5. Dashboard updates in real-time
+
+---
+
+## 📂 Project Structure
+
+* `app.py` → Flask server & decision logic
+* `ambulance.py` → GPS simulation script
+* `templates/index.html` → Dashboard UI
+* `static/style.css` → Styling
+* `static/script.js` → Frontend logic
+* `requirements.txt` → Dependencies
+
+---
+
+## ▶️ How to Run
 
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
 
-Open `http://127.0.0.1:5000`
+Open in browser:
+http://127.0.0.1:5000
 
-## Optional GPS simulation from terminal
+---
 
-```bash
-python ambulance.py
-```
+## 📸 Output
+![Dashboard](dashboard.png)
+---
+
+## 🎯 Objective
+
+To design a smart traffic control system that reduces delays for emergency vehicles and improves road safety using real-time data processing.
+
+---
+
+## 🔮 Future Enhancements
+
+* 📍 GPS integration with real devices
+* 🤖 AI-based route optimization
+* 🗺️ Google Maps API integration
+* 📡 Real-time traffic analytics
+
+---
+
+## 👤 Author
+
+Tutika Gayathri
